@@ -1,0 +1,189 @@
+:root {
+    $couleur-primaire: #9356DC;
+    $couleur-secondaire: #FF79DA;
+    $couleur-tertiaire: #99E2D0;
+  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+   
+}
+
+// Styles pour le logo et les titres
+h1, h2, h3, h4 {
+    font-family: 'Shrikhand', sans-serif;
+
+}
+
+
+p, span {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+// Header 
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+// Location
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+    border-top: solid;
+}
+
+// Acceuil 
+.acceuil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+
+    .acceuil__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+
+    .btn {
+        background: linear-gradient(170deg, #ff79da, #9356dc);
+        color: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: large;
+        padding: 20px;
+        border-radius: 50px;
+        border: none;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        box-shadow: 4px 4px 2px lightgrey;
+        max-width: 250px;
+        align-self: center;
+        }
+    }     
+}
+
+// ETAPE 
+.fonctionement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .title {
+      margin-left: 20px;
+    }
+  
+    .etape {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 10px;
+      margin-right:10px ;
+  
+      .etape__btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        width: 90%;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    
+  
+        .etape__btn__order {
+          background: #9356dc;
+          color: white;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+          margin-left: -20px;
+        }
+  
+        .etape__content {
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+  
+          .order__icon {
+            margin-right: 20px;
+          }
+  
+          .order__text {
+            align-items: center;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+/////// RESTAURANTS 
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin-top: 50px;
+
+    .restaurants__card {
+        margin: 20px;
+        position: relative;
+    }
+
+    .tag {
+        background: #a9e0d1;
+        color: #008766;
+        font-weight: 500;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .card__content {
+        background-color: white;
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+        
+
+        img {
+            width: 100%;
+            height: 180px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .card__title {
+            margin-left: 10px;
+        }
+
+        .card__subtitle {
+            margin-left: 10px;
+            margin-top: -15px;
+            padding-bottom: 20px;
+            
+        }
+        .favorite__icon {
+            position: absolute;
+            top: 210;
+            right: 30;  
+        }
+    }
+}
