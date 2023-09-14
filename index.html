@@ -2,7 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,100&family=Roboto:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Oh my Food </title>
 </head>
@@ -24,14 +27,14 @@
 
         <section class="acceuil">
             <div class="acceuil__content">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, séléectionnés par nos soins.</p>
+                <h3>Réservez le menu qui vous convient</h3>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 <button class="btn">Explorer nos restaurants</button>
             </div>
         </section>
 
         <section class="fonctionement">
-            <h2 class="title">Fonctionnement</h2>
+            <h3 class="title">Fonctionnement</h3>
             <div class="etape">
                 <div class="etape__btn">
                     <div class="etape__btn__order">
@@ -66,7 +69,7 @@
         </section>
 
         <section class="restaurants">
-            <h2>Restaurants</h2>
+            <h3 class="restaurants__title">Restaurants</h3>
             <a href="#">
                 <article class="restaurants__card">
                     <div class="card__content">
@@ -75,7 +78,8 @@
                             <div class="tag">Nouveau</div>
                             <h3 class="card__title">La palette du goût</h3>
                             <p class="card__subtitle">Ménilemontant</p>
-                            <span class="favorite__icon"><i class="fas fa-heart favorite-icon"></i></span>
+                            <input type="checkbox" id="favorite-icon-1" class="favorite-icon__input">
+                            <label for="favorite-icon-1" class="favorite__icon"><i class="far fa-heart"></i></label>
                         </div>
                     </div>
                 </article>
@@ -89,7 +93,7 @@
                             <div class="tag">Nouveau</div>
                             <h3 class="card__title">La note enchantée</h3>
                             <p class="card__subtitle">Charonne</p>
-                            <span class="favorite__icon"><i class="fas fa-heart favorite-icon"></i></span>
+                            <span class="favorite__icon"><i class="fa-regular fa-heart"></i></span>
                         </div>
                     </div>
                 </article>
@@ -102,7 +106,7 @@
                             <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'une assiete">
                             <h3 class="card__title">À la française</h3>
                             <p class="card__subtitle">Cité Rouge</p>
-                            <span class="favorite__icon"><i class="fas fa-heart favorite-icon"></i></span>
+                            <span class="favorite__icon"><i class="fa-regular fa-heart"></i></span>
                         </div>
                     </div>
                 </article>
@@ -115,7 +119,7 @@
                             <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'une assiete">
                             <h3 class="card__title">Le délice des sens</h3>
                             <p class="card__subtitle">Folie-Méricourt</p>
-                            <span class="favorite__icon"><i class="fas fa-heart favorite-icon"></i></span>
+                            <span class="favorite__icon"><i class="fa-regular fa-heart"></i></span>
                         </div>
                     </div>
                 </article>
@@ -126,7 +130,21 @@
     </main>
 
     <footer class="footer">
+        <h2 class="footer__title">ohmyfood</h2>
+        <div class="footer__content">
+            <p>
+            <i class="fas fa-utensils"></i>
+            Proposer un restaurant
+            </p>
 
+            <p>
+                <i class="fas fa-hands-helping"></i>
+                Devenir partenaire
+            </p>
+            
+            <p>Mentions légales</p>
+            <p>Contact</p>
+        </div>
     </footer>
 
 </body>

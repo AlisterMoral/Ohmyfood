@@ -14,3 +14,10 @@ ensuite j'ai cree une section location car a l'avenir on pourra metre notre geao
 ensuite j'ai fais l'acceuil et le fonctionement du site
 
 puis jai fais les card de restaurants
+
+12/09/2023
+ajout du footer je doit encore finir le style et je serais bon pour la home page en mobile
+
+14/09/2023
+
+finission de la home page et j'ai commencé les animation scss
