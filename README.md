@@ -21,3 +21,7 @@ ajout du footer je doit encore finir le style et je serais bon pour la home page
 14/09/2023
 
 finission de la home page et j'ai commencé les animation scss
+
+15/09/2023
+
+animation terminé + home page terminé pour mobile je vais avancé sur les media querry pour desktop

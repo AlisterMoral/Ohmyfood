@@ -1,20 +1,14 @@
-:root {
-    $couleur-primaire: #9356DC;
-    $couleur-secondaire: #FF79DA;
-    $couleur-tertiaire: #99E2D0;
-  
-}
+$couleur-primaire: #9356DC;
+$couleur-secondaire: #FF79DA;
+$couleur-tertiaire: #99E2D0;
 
-// Styles pour le logo et les titres
-h1,h2 {
+// Styles for the logo and titles
+h1, h2 {
     font-family: 'Shrikhand', sans-serif;
-
 }
-
 
 p, span, h3, h4 {
     font-family: 'Roboto', sans-serif;
-    
 }
 
 ////// BODY
@@ -23,10 +17,9 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-   
 }
 
-// Header 
+// Header
 .header {
     display: flex;
     justify-content: center;
@@ -41,7 +34,7 @@ body {
     border-top: 2px solid #CCCCCC;
 }
 
-// Acceuil 
+// Accueil
 .acceuil {
     display: flex;
     flex-direction: column;
@@ -49,128 +42,130 @@ body {
     align-items: center;
     background-color: whitesmoke;
 
-    .acceuil__content{
+    .acceuil__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 20px;
-        
 
         p {
             margin: 30px;
-            margin-top: 0px;
+            margin-top: -8px;
+            color: #353535;
         }
 
-.btn {
-    background: linear-gradient(170deg, #ff79da, #9356dc);
-    color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: large;
-    padding: 20px;
-    border-radius: 50px;
-    border: none;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    box-shadow: 4px 4px 2px lightgrey;
-    max-width: 250px;
-    align-self: center;
-    position: relative; 
-    overflow: hidden; 
+        .btn {
+            background: linear-gradient(170deg, #ff79da, #9356dc);
+            color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: large;
+            padding: 20px;
+            border-radius: 50px;
+            border: none;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            box-shadow: 4px 4px 2px lightgrey;
+            max-width: 250px;
+            align-self: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0);
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover::after {
+            background: rgba(255, 255, 255, 0.2);
+        }
     }
-    
-    .btn::after {
-        content: "";
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        background: rgba(255, 255, 255, 0); 
-        top: 0;
-        left: 0;
-        pointer-events: none; 
-        transition: background 0.2s;
-    }
-    
-    .btn:hover::after {
-        background: rgba(255, 255, 255, 0.2); 
-    }
-}     
 }
 
-// ETAPE 
+// ETAPE
 .fonctionement {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
-    .title {
-      margin-left: 20px;
-    }
-  
-    .etape {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-left: 10px;
-      margin-right:10px ;
-  
-      .etape__btn {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        background-color: whitesmoke;
-        width: 90%;
-        border-radius: 15px;
-        margin: 10px;
-        padding: 10px;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-    
-  
-        .etape__btn__order {
-          background: #9356dc;
-          color: white;
-          width: 2rem;
-          height: 2rem;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-right: 15px;
-          margin-left: -20px;
-        }
-  
-        .etape__content {
-          display: flex;
-          align-items: center;
-          flex-grow: 1;
-  
-          .order__icon {
-            margin-right: 20px;
-          }
-          .order__icon .fa-store {
-            color: #9356dc;
-        }
-  
-          .order__text {
-            align-items: center;
-            margin-left: 10px;
-          }
-        }
-      }
-    }
-  }
 
-/////// RESTAURANTS 
+    .title {
+        margin-left: 20px;
+    }
+
+    .etape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .etape__btn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            width: 90%;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
+            .etape__btn__order {
+                background: #9356dc;
+                color: white;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+                margin-left: -20px;
+            }
+
+            .etape__content {
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+
+                .order__icon {
+                    margin-right: 20px;
+                }
+
+                .order__icon .fa-store {
+                    color: #9356dc;
+                }
+
+                .order__text {
+                    align-items: center;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+/////// RESTAURANTS
 .restaurants {
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
     margin-top: 50px;
+    padding-bottom: 50px;
 
     .restaurants__title {
         margin-left: 25px;
         margin-bottom: 0px;
+        margin-top: 40px;
     }
 
     .restaurants__card {
@@ -183,6 +178,7 @@ body {
         color: inherit;
     }
 
+/// TAG NOUVEAU ////
     .tag {
         background: #a9e0d1;
         color: #008766;
@@ -194,7 +190,7 @@ body {
         margin-top: 10px;
         margin-right: 10px;
     }
-
+//////////////////
     .card__content {
         background-color: white;
         width: 100%;
@@ -221,30 +217,64 @@ body {
             font-weight: 300;
             line-height: normal;
         }
-    }
+/////////// ICON FAV /////
+        .favorite__icon {
+            position: absolute;
+            top: 205;
+            right: 30;
+            font-size: 25px;
+        }
 
-    .favorite__icon {
-        position: relative;
-        font-size: 24px;
-        cursor: pointer;
-    }
-    
-    .favorite__icon i.far.fa-heart {
-        color: black; 
-        transition: color 0.2s; 
-    }
-    
-   
-    input.favorite-icon__input:checked + .favorite__icon i.far.fa-heart {
-        color: purple; 
-    }
-/////////////// FOOTER 
+        .full {
+            opacity: 0;
+        }
 
+        .favorite__checkbox_1,
+        .favorite__checkbox_2,
+        .favorite__checkbox_3,
+        .favorite__checkbox_4 {
+            display: none;
+        }
+
+        .favorite__icon i.full:active {
+            opacity: 1;
+            color: transparent;
+            background-image: linear-gradient(170deg, #ff79da, #9356dc);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .favorite__icon i.full {
+            display: none;
+        }
+
+        .favorite__checkbox_1:checked + .favorite__icon i.full,
+        .favorite__checkbox_2:checked + .favorite__icon i.full,
+        .favorite__checkbox_3:checked + .favorite__icon i.full,
+        .favorite__checkbox_4:checked + .favorite__icon i.full {
+            display: inline;
+            opacity: 1;
+            color: transparent;
+            background-image: linear-gradient(10deg, #ff79da, #9356dc);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .favorite__checkbox_1:checked + .favorite__icon i.empty,
+        .favorite__checkbox_2:checked + .favorite__icon i.empty,
+        .favorite__checkbox_3:checked + .favorite__icon i.empty,
+        .favorite__checkbox_4:checked + .favorite__icon i.empty {
+            display: none;
+        }
+    }
+}
+
+/////////////// FOOTER
 .footer {
     display: flex;
     flex-direction: column;
     background-color: #353535;
-    
+
     .footer__title {
         color: white;
         margin-left: 20px;
@@ -256,15 +286,14 @@ body {
         flex-direction: column;
         margin-left: 20px;
         margin-bottom: 20px;
-        
+
         p {
             color: white;
             margin-bottom: 0px;
-            
+
             i {
-                color: white; 
+                color: white;
             }
         }
     }
-}
 }
