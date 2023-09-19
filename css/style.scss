@@ -1,7 +1,7 @@
-$couleur-primaire: #9356DC;
-$couleur-secondaire: #FF79DA;
-$couleur-tertiaire: #99E2D0;
-
+$purple: #9356DC;
+$pink: #FF79DA;
+$green: #99E2D0;
+ 
 // Styles for the logo and titles
 h1, h2 {
     font-family: 'Shrikhand', sans-serif;
@@ -16,13 +16,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
+    margin: 0px;
 }
 
 // Header
 .header {
     display: flex;
     justify-content: center;
+    margin-bottom: -15px;
 }
 
 // Location
@@ -310,6 +311,7 @@ body {
 
 /// MEDIA QUERY FOR DESKTOP
 @media (min-width: 768px) {
+    
     body {
         display: flex;
         justify-content: center;
@@ -381,8 +383,9 @@ body {
     }
 
     .restaurants__title {
-       font-size: 24px;
-       display: flex;
+        padding-left: 240px;
+        margin-left: 0; 
+        font-size: 24px; 
     }
 
 

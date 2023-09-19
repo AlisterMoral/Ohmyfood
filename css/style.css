@@ -10,12 +10,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
+  margin: 0px;
 }
 
 .header {
   display: flex;
   justify-content: center;
+  margin-bottom: -15px;
 }
 
 .location {
@@ -323,8 +324,9 @@ body {
     gap: 30px;
   }
   .restaurants__title {
+    padding-left: 240px;
+    margin-left: 0;
     font-size: 24px;
-    display: flex;
   }
   .restaurants__card {
     width: 450px;
