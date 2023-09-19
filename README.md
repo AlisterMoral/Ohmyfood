@@ -25,3 +25,6 @@ finission de la home page et j'ai commencé les animation scss
 15/09/2023
 
 animation terminé + home page terminé pour mobile je vais avancé sur les media querry pour desktop
+
+18/09/2023
+Responsive pour la version desktop bientot fini
