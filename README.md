@@ -28,3 +28,7 @@ animation terminé + home page terminé pour mobile je vais avancé sur les medi
 
 18/09/2023
 Responsive pour la version desktop bientot fini
+
+25/09/2023
+j'ai pas mis a jours le readme depuis la dernier fois, mais ducoup j'ai fini toutes les responsives pour la front page toutes les animation sur la front page
+j'ai commencé a codé les pages restaurants il faut que je termine les animation + la responsive et la loading page et je serais bon

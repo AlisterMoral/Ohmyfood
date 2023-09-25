@@ -1,6 +1,45 @@
 $purple: #9356DC;
 $pink: #FF79DA;
 $green: #99E2D0;
+
+@mixin button-style {
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: large;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    margin: 20px auto;
+    margin-top: 40px;
+    box-shadow: 4px 4px 2px lightgrey;
+    width: 230px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    display: block;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0);
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      transition: background 0.4s;
+    }
+  
+    &:hover {
+      box-shadow: 6px 6px 4px lightgrey;
+    }
+  
+    &:hover::after {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
 // Styles for the logo and titles
 h1, h2 {
     font-family: 'Shrikhand', sans-serif;
@@ -22,27 +61,77 @@ body {
 // Header
 .header {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 20px;
     gap: 50px;
-    margin-left: -50px;  
+  
+    .back-button {
+      font-size: 24px;
+      text-decoration: none;
+  
+      i {
+        font-size: 24px;
+        text-decoration: none;
+        color: black; // Set the color to black
+      }
+    }
+  
+    .logo {
+      margin-left: auto;
+    }
+  }
+////
+.restaurants__menu-title {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.back-button {
-  font-size: 24px;
-  text-decoration: none;
+.favorite__icon {
+  position: absolute;
+  top: 60%;
+  right: 7%;
+  transform: translateY(-50%);
+  font-size: 25px;
 }
 
-.back-button i {
-    font-size: 24px; 
-    text-decoration: none;
+.full {
+  opacity: 0;
+}
+
+.favorite__checkbox_1 {
+  display: none;
+}
+
+.favorite__icon i.full:active {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.favorite__icon i.full {
+  display: none;
+}
+
+.favorite__checkbox_1:checked + .favorite__icon i.full {
+  display: inline;
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(10deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.favorite__checkbox_1:checked + .favorite__icon i.empty {
+  display: none;
 }
 
 .restaurants__menu {
     position: relative;
     top: auto;
-    background-color: whitesmoke;
+    background-color: #F6F6F6;
     left: 0;
     right: 0;
     border-top-left-radius: 40px;
@@ -63,24 +152,24 @@ body {
 .restaurants__menu-name {
     position: relative;
     display: inline-block;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-}
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      height: 2px;
+      background-color: $green;
+    }
+  }
 
-.restaurants__menu-name::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60%;
-    height: 2px;
-    background-color: $green; 
-}
-
-.restaurants__menu-entres{
+.restaurants__menu-plats{
     display: flex;
     background-color: white;
     border-radius: 20px;
@@ -96,8 +185,8 @@ body {
     padding: 5px;
     flex: 1;
     margin: 10px; 
-  
 }
+
 
 .menu__card h4 {
     margin: 0;
@@ -130,44 +219,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn {
+    @include button-style;
+  }
 
 .footer {
     display: flex;
