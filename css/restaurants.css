@@ -90,7 +90,7 @@ body {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 20px;
-  margin-top: -70px;
+  margin-top: -90px;
 }
 
 .restaurants__img {
@@ -125,16 +125,20 @@ body {
   border-radius: 20px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 .menu__card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
   flex: 1;
   margin: 10px;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .menu__card h4 {
@@ -144,6 +148,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  overflow: hidden;
 }
 
 .menu__card__description {
@@ -159,11 +164,39 @@ body {
   line-height: normal;
 }
 
-.menu__card__price {
+.menu__card-price {
   text-align: right;
   margin-top: 25px;
   margin-right: 10px;
   font-weight: bold;
+  transition: 400ms ease-in-out;
+  z-index: 2;
+}
+
+.menu__card-check {
+  background-color: #99E2D0;
+  width: 80px;
+  height: 100%;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -100px;
+  transition: 400ms ease-in-out;
+}
+
+.menu__card:hover .menu__card-check {
+  margin-right: -10px;
+}
+
+.menu__card:hover .menu__card-price {
+  margin-right: 70px;
 }
 
 .btn {
