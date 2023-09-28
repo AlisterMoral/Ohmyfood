@@ -50,6 +50,70 @@ p, span, h3, h4 {
 }
 
 ////// BODY
+/// /////////// LOADER ////////////////
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 2s linear 1 forwards;
+}
+
+.loader__wait {
+  border: 6px solid $purple;
+  border-top: 6px solid $pink;
+  border-bottom: 6px solid $green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 4s linear infinite;
+}
+
+.loading-text {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  top: 55%;
+  left: 50%; 
+  transform: translateX(-50%); 
+  font-size: 24px;
+  text-align: center;
+  z-index: 10000;
+  font-family: Shrikhand;
+  color: white;
+  animation: slideColor 2s linear forwards, fadeOutText 0s linear 2s forwards;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 1; display: none; }
+}
+
+@keyframes slideColor {
+  0% { color: white; }
+  33.33% { color: $purple; }
+  66.66% { color: $pink; }
+  100% { color: $green; }
+}
+
+@keyframes fadeOutText {
+  0% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+////// BODY ///////////////
 body {
     display: flex;
     flex-direction: column;
@@ -58,7 +122,7 @@ body {
     
 }
 
-// Header
+/////////// Header///////////////////////////
 .header {
   display: flex;
   justify-content: center;
@@ -79,7 +143,7 @@ body {
 }
 
 
-////
+/////////////////////RESTAURANTS////////////
 .restaurants__menu-title {
   display: flex;
   align-items: center;
@@ -171,7 +235,7 @@ body {
       background-color: $green;
     }
   }
-
+////////////////CARD /////////////////////
   .restaurants__menu-plats{
     display: flex;
     background-color: white;
@@ -274,6 +338,7 @@ body {
     @include button-style;
   }
 
+  ////////////////FOOTER////////////
 .footer {
     display: flex;
     flex-direction: column;

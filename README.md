@@ -32,3 +32,6 @@ Responsive pour la version desktop bientot fini
 25/09/2023
 j'ai pas mis a jours le readme depuis la dernier fois, mais ducoup j'ai fini toutes les responsives pour la front page toutes les animation sur la front page
 j'ai commencé a codé les pages restaurants il faut que je termine les animation + la responsive et la loading page et je serais bon
+
+28/09/2023
+j'ai pas mis a jour encore mais ducoup la loading page es fini le loader es fini et les animation + responsive des pages restaurants son fini je vais re passé pour voir si tout es conforme a la maquette et voir si je peu pas épurée le code
