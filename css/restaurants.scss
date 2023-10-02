@@ -329,6 +329,10 @@ body {
     transition: 400ms ease-in-out;
 }
 
+.fa-circle-check{
+  margin-right: 10px;
+}
+
 .menu__card:hover .menu__card-check{
   margin-right: -10px;
 }
@@ -451,7 +455,7 @@ body {
   .restaurants__menu-name{
     margin-left: 100px;
   }
-  
+
   .restaurants__menu-plats{
     margin-left: 100px;
     margin-right: 100px;

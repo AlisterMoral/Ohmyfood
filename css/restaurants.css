@@ -292,6 +292,10 @@ body {
   transition: 400ms ease-in-out;
 }
 
+.fa-circle-check {
+  margin-right: 10px;
+}
+
 .menu__card:hover .menu__card-check {
   margin-right: -10px;
 }
