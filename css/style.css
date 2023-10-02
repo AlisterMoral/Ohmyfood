@@ -117,6 +117,10 @@ body {
   padding: 15px 0px;
 }
 
+.fa-map-marker-alt {
+  margin-right: 10px;
+}
+
 .acceuil {
   display: flex;
   flex-direction: column;
@@ -133,6 +137,7 @@ body {
 }
 .acceuil .acceuil__content h2 {
   font-family: "Roboto";
+  margin-left: 30px;
 }
 .acceuil .acceuil__content p {
   margin: 30px;
@@ -181,6 +186,7 @@ body {
 }
 .fonctionement .fonctionement_title {
   margin-left: 20px;
+  font-size: 24px;
 }
 .fonctionement .etape {
   display: flex;
@@ -260,8 +266,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 .restaurants .card__content {
   background-color: white;
@@ -279,6 +285,7 @@ body {
 }
 .restaurants .card__content .card__title {
   margin-left: 10px;
+  font-size: 18px;
 }
 .restaurants .card__content .card__subtitle {
   margin-left: 10px;
@@ -347,6 +354,7 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 18px;
 }
 
 .footer__list {
@@ -361,6 +369,21 @@ body {
   display: flex;
   color: white;
   margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer__content-1 {
+  display: flex;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer__content-2 {
+  display: flex;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .footer__content i {
@@ -374,8 +397,21 @@ body {
     flex-direction: row-reverse;
     justify-content: flex-start;
   }
+  .footer__content-1 {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .footer__content-2 {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
   .footer__title {
-    margin-right: 0;
+    margin-right: 30px;
     margin-left: 30px;
     margin-top: 20px;
   }
@@ -396,8 +432,8 @@ body {
   .header {
     padding: 5px;
   }
-  .acceuil__content h3 {
-    font-size: 40px;
+  .acceuil__content h2 {
+    font-size: 35px;
   }
   .acceuil__content .btn {
     background: linear-gradient(170deg, #ff79da, #9356dc);
@@ -442,6 +478,11 @@ body {
   .restaurants__card-link {
     width: 50%;
   }
+  .restaurants .restaurants__title {
+    margin-left: 100px;
+    font-size: 24px;
+    margin-bottom: -60px;
+  }
 }
 @media (min-width: 1025px) {
   body {
@@ -454,7 +495,7 @@ body {
   .header {
     padding: 5px;
   }
-  .acceuil__content h3 {
+  .acceuil__content h2 {
     font-size: 40px;
   }
   .acceuil__content .btn {
@@ -518,10 +559,22 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    height: 70px;
+  }
+  .footer__content-1 {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .footer__content-2 {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 20px;
   }
   .footer__title {
-    margin-right: 0;
+    margin-right: 50px;
     margin-left: 30px;
     margin-top: 20px;
   }
