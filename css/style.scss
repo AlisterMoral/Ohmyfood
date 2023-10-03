@@ -311,9 +311,18 @@ body {
             font-weight: 300;
             line-height: normal;
         }
+//////////////////FAV ICON ////////////////////////
+        .full {
+            position: absolute;
+            top: 83%;
+            right: 10%;
+            transform: translateY(-50%);
+            font-size: 25px;
+            cursor: pointer;
+            opacity: 0;
+        }
 
-        /////////// ICON FAV /////
-        .favorite__icon {
+        .empty{
             position: absolute;
             top: 83%;
             right: 10%;
@@ -322,50 +331,17 @@ body {
             cursor: pointer;
         }
 
-        .full {
-            opacity: 0;
-        }
-
-        .favorite__checkbox_1,
-        .favorite__checkbox_2,
-        .favorite__checkbox_3,
-        .favorite__checkbox_4 {
-            display: none;
-        }
-
-        .favorite__icon i.full:active {
-            opacity: 1;
-            color: transparent;
-            background-image: linear-gradient(170deg, $pink, $purple);
-            -webkit-background-clip: text;
-            background-clip: text;
-        }
-
-        .favorite__icon i.full {
-            display: none;
-        }
-
-        .favorite__checkbox_1:checked + .favorite__icon i.full,
-        .favorite__checkbox_2:checked + .favorite__icon i.full,
-        .favorite__checkbox_3:checked + .favorite__icon i.full,
-        .favorite__checkbox_4:checked + .favorite__icon i.full {
-            display: inline;
-            opacity: 1;
+        .full:hover {
             color: transparent;
             background-image: linear-gradient(10deg, $pink, $purple);
             -webkit-background-clip: text;
             background-clip: text;
-        }
-
-        .favorite__checkbox_1:checked + .favorite__icon i.empty,
-        .favorite__checkbox_2:checked + .favorite__icon i.empty,
-        .favorite__checkbox_3:checked + .favorite__icon i.empty,
-        .favorite__checkbox_4:checked + .favorite__icon i.empty {
-            display: none;
+            transition: all 400ms;
+            opacity: 1;
         }
     }
 }
-
+        
 /////////////// FOOTER
 
 .footer {
@@ -404,6 +380,11 @@ body {
     color: white;
     margin-bottom: 10px;
     font-size: 16px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .footer__content-2 {

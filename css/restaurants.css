@@ -6,86 +6,6 @@ p, span, h3, h4 {
   font-family: "Roboto", sans-serif;
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #353535;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: fadeOut 2s linear 1 forwards;
-}
-
-.loader__wait {
-  border: 6px solid #9356DC;
-  border-top: 6px solid #FF79DA;
-  border-bottom: 6px solid #99E2D0;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 4s linear infinite;
-}
-
-.loading-text {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  top: 55%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  text-align: center;
-  z-index: 10000;
-  font-family: Shrikhand;
-  color: white;
-  animation: slideColor 2s linear forwards, fadeOutText 0s linear 2s forwards;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    display: none;
-  }
-}
-@keyframes slideColor {
-  0% {
-    color: white;
-  }
-  33.33% {
-    color: #9356DC;
-  }
-  66.66% {
-    color: #FF79DA;
-  }
-  100% {
-    color: #99E2D0;
-  }
-}
-@keyframes fadeOutText {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
 body {
   display: flex;
   flex-direction: column;
@@ -226,6 +146,7 @@ body {
   margin-left: 10px;
   justify-content: space-between;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .menu__card-info {
@@ -320,6 +241,7 @@ body {
   position: relative;
   overflow: hidden;
   display: block;
+  cursor: pointer;
 }
 .btn::after {
   content: "";
@@ -339,6 +261,49 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu__section-entrees,
+.menu__section-plats,
+.menu__section-desserts {
+  opacity: 0;
+}
+
+.menu__section-entrees {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.1ms;
+}
+
+.menu__section-plats {
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.2ms;
+}
+
+.menu__section-desserts {
+  animation: fadeIn 3s ease-in-out forwards;
+  animation-delay: 0.3ms;
+}
+
+.btn {
+  opacity: 0;
+}
+
+.btn {
+  animation: fadeIn 3s ease-in-out forwards;
+  animation-delay: 0.3ms;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -351,6 +316,10 @@ body {
   color: white;
   margin-bottom: 10px;
   font-size: 16px;
+}
+.footer__content-1 a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer__content-2 {

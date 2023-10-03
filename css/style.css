@@ -296,7 +296,16 @@ body {
   font-weight: 300;
   line-height: normal;
 }
-.restaurants .card__content .favorite__icon {
+.restaurants .card__content .full {
+  position: absolute;
+  top: 83%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+}
+.restaurants .card__content .empty {
   position: absolute;
   top: 83%;
   right: 10%;
@@ -304,41 +313,13 @@ body {
   font-size: 25px;
   cursor: pointer;
 }
-.restaurants .card__content .full {
-  opacity: 0;
-}
-.restaurants .card__content .favorite__checkbox_1,
-.restaurants .card__content .favorite__checkbox_2,
-.restaurants .card__content .favorite__checkbox_3,
-.restaurants .card__content .favorite__checkbox_4 {
-  display: none;
-}
-.restaurants .card__content .favorite__icon i.full:active {
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-.restaurants .card__content .favorite__icon i.full {
-  display: none;
-}
-.restaurants .card__content .favorite__checkbox_1:checked + .favorite__icon i.full,
-.restaurants .card__content .favorite__checkbox_2:checked + .favorite__icon i.full,
-.restaurants .card__content .favorite__checkbox_3:checked + .favorite__icon i.full,
-.restaurants .card__content .favorite__checkbox_4:checked + .favorite__icon i.full {
-  display: inline;
-  opacity: 1;
+.restaurants .card__content .full:hover {
   color: transparent;
   background-image: linear-gradient(10deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   background-clip: text;
-}
-.restaurants .card__content .favorite__checkbox_1:checked + .favorite__icon i.empty,
-.restaurants .card__content .favorite__checkbox_2:checked + .favorite__icon i.empty,
-.restaurants .card__content .favorite__checkbox_3:checked + .favorite__icon i.empty,
-.restaurants .card__content .favorite__checkbox_4:checked + .favorite__icon i.empty {
-  display: none;
+  transition: all 400ms;
+  opacity: 1;
 }
 
 .footer {
@@ -377,6 +358,10 @@ body {
   color: white;
   margin-bottom: 10px;
   font-size: 16px;
+}
+.footer__content-1 a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer__content-2 {
