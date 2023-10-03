@@ -47,6 +47,7 @@ body {
   top: 55%;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   font-size: 24px;
   text-align: center;
   z-index: 10000;
@@ -59,9 +60,11 @@ body {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 @keyframes fadeOut {
