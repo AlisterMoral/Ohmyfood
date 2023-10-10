@@ -69,11 +69,11 @@ body {
 }
 @keyframes fadeOut {
   0% {
-    display: flex;
+    visibility: visible;
     opacity: 1;
   }
   100% {
-    display: none;
+    visibility: hidden;
     opacity: 1;
   }
 }
