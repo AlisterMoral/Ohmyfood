@@ -74,8 +74,8 @@ body {
 }
 
 @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 1; display: none; }
+    0% { display: flex; opacity: 1; }
+    100% { display: none; opacity: 1;  }
 }
 
 @keyframes slideColor {
